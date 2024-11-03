@@ -1,0 +1,30 @@
+{
+  "name": "decorable",
+  "version": "0.1.0",
+  "description": "Useful decorators",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "build:clean": "rm -rf build",
+    "clean": "npm run build:clean && npm run test:clean",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "release": "npm run clean && npm run lint && npm run build && npm run test",
+    "test": "jest",
+    "test:clean": "rm -rf coverage",
+    "test:watch": "jest --watchAll --no-coverage"
+  },
+  "author": "andrewsha256",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@types/jest": "^29.5.14",
+    "eslint": "^9.14.0",
+    "globals": "^15.11.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.12.2"
+  }
+}

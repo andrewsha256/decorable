@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "build",
+        "tsBuildInfoFile": "./build/build.info",
+        "strict": true,
+        "noImplicitAny": true,
+        "experimentalDecorators": true,
+        "baseUrl": "./src",
+        "paths": {}
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "src/**/__tests__/**/*"
+    ]
+}
